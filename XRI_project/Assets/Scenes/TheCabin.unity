@@ -200,13 +200,49 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4944102135447920, guid: ea0b3a53d51d3f94a9b82aff7983c608, type: 3}
       insertIndex: -1
       addedObject: {fileID: 393511956}
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1838814048331682, guid: ea0b3a53d51d3f94a9b82aff7983c608, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 115823511}
   m_SourcePrefab: {fileID: 100100000, guid: ea0b3a53d51d3f94a9b82aff7983c608, type: 3}
 --- !u!4 &115823508 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4944102135447920, guid: ea0b3a53d51d3f94a9b82aff7983c608, type: 3}
   m_PrefabInstance: {fileID: 115823507}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &115823509 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4290045977357102, guid: ea0b3a53d51d3f94a9b82aff7983c608, type: 3}
+  m_PrefabInstance: {fileID: 115823507}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &115823510 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1838814048331682, guid: ea0b3a53d51d3f94a9b82aff7983c608, type: 3}
+  m_PrefabInstance: {fileID: 115823507}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &115823511
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 115823510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1b35aa3dea8b7c4eae73c8991bb705e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  <AudioClipOnStart>k__BackingField: {fileID: 0}
+  <AudioClipOnEnd>k__BackingField: {fileID: 0}
+  featureUsage: 0
+  doorPivot: {fileID: 115823509}
+  maxAngle: 90
+  reverseAngleDirection: 0
+  doorSpeed: 1
+  open: 0
+  MakeKinematicOnOpen: 0
+  socketInteractor: {fileID: 0}
+  simpleInteractable: {fileID: 0}
 --- !u!1001 &393511955
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -744,6 +780,7 @@ GameObject:
   m_Component:
   - component: {fileID: 991764985}
   - component: {fileID: 991764984}
+  - component: {fileID: 991764986}
   m_Layer: 0
   m_Name: XR Interaction Manager
   m_TagString: Untagged
@@ -780,6 +817,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &991764986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991764983}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef2d839af1b80de468cd1dcd033d9353, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1300193427
 GameObject:
   m_ObjectHideFlags: 0

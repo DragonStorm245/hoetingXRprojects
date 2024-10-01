@@ -34,16 +34,42 @@ public class CoreFeatures : MonoBehaviour
 
     protected virtual void Awake ()
     {
-        //MakeSFXAudioSource();
+        MakeSFXAudioSource();
     }
 
     private void MakeSFXAudioSource()
     {
         //if this is equal to null, create it here
 
+        audioSource = GetComponent<AudioSource>();
+
+        //If component doesn't exist, make one
+
         if (audioSource == null)
         {
             audioSource = gameObject.AddComponent<AudioSource>();
         }
+
+        AudioSFXSourceCreated = true;
+
     }
+
+    protected void PlayOnStart()
+    {
+        if(AudioSFXSourceCreated && AudioClipOnStart != null)
+        {
+            audioSource.clip = AudioClipOnStart;
+            audioSource.Play();
+        }
+    }
+
+    protected void PlayOnEnd()
+    {
+        if (AudioSFXSourceCreated && AudioClipOnEnd != null)
+        {
+            audioSource.clip = AudioClipOnEnd;
+            audioSource.Play();
+        }
+    }
+
 }
