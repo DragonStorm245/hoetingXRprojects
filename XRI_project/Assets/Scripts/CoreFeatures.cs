@@ -2,12 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum FeatureUsage
-{
-    Once, //use once
-    Toggle // use features more than once
-}
-
 public class CoreFeatures : MonoBehaviour
 {
     //Properties common way to access code outside of this script
